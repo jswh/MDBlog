@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'></script>
+	<script src="lib/markdown.js"></script>
+	<script src='lib/github.js'></script>
+</head>
+<body>
+	<script>
+		GH.getList(function(res) {
+			var $body = $('body');
+			$.each(res, function (key, value) {
+				$body.append('<a href="' + value.url + '"> ' + value.name + ' </a>')
+	
+			});
+		});
+		/**
+		$.get('docs/test.md', {}, function(res) {
+			$('html').html(MD.toHTML(res));
+		});
+		**/
+	</script>
+</body>
+</html>
