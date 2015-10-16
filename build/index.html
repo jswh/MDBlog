@@ -3,24 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
-	<script src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'></script>
-	<script src="lib/markdown.js"></script>
-	<script src='lib/github.js'></script>
+	<script type="text/javascript">
+		config = {
+			blog_name: 'Jswh'
+		}
+	</script>
 </head>
 <body>
-	<script>
-		GH.getList(function(res) {
-			var $body = $('body');
-			$.each(res, function (key, value) {
-				$body.append('<a href="' + value.url + '"> ' + value.name + ' </a>')
-	
-			});
-		});
-		/**
-		$.get('docs/test.md', {}, function(res) {
-			$('html').html(MD.toHTML(res));
-		});
-		**/
-	</script>
+	<div id="blog">
+	</div>
+	<script src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js' type="text/javascript"></script>
+	<script src="http://cdn.rawgit.com/jswh/MDBlog/master/build/lib/vue.min.js" type="text/javascript"></script>
+	<script src="http://cdn.rawgit.com/jswh/MDBlog/master/build/lib/vue-router.min.js" type="text/javascript"></script>
+	<script src="http://rawgit.com/jswh/MDBlog/master/build/lib/main.js" type="text/javascript"></script>
 </body>
 </html>

@@ -1,20 +1,18 @@
 var api = 'https://api.github.com/repos/jswh/jswh.github.io/contents/docs';
-var getList = function(callback) {
-	$.get(api, {}, function(res) {
-		var rtn = [];
-		$.each(res, function(key, value) {
-			if(value.type == 'file') {
-				rtn.push({
-					'url': value.download_url,
-					'name': value.name
-				});
-			}
-			callback(rtn);
-		})
-	})
+var content = 'https://raw.githubusercontent.com/jswh/jswh.github.io/master/';
+
+var getFileContent = function (path, callback) {
+	$.get(content + path, {}, callback);
+}
+
+var getList = function(path, callback) {
+	
+	path = path.replace('docs/', '');
+	$.get(api + '/' + path, {}, callback);
 };
 
 module.exports = {
-	getList: getList
+	getList: getList,
+	getContent: getFileContent
 };
 

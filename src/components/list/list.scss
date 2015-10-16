@@ -1,0 +1,42 @@
+.post {
+	padding: 20px 40px;
+	border-bottom: 1px solid #ccc;
+	transition: all .5s ease;
+	a.title {
+		margin: 0;
+		font-size: 12px;
+		float::right;
+		color:#ccc;
+		&:hover {
+			color:#3498db
+		}
+	}
+	.meta {
+		color: #b7b6b6;
+	}
+	.content {
+		position: relative;
+		padding-bottom: 12px;
+		transition:all 0.625s;
+		-moz-transition:all 0.625s; /* Firefox 4 */
+		-webkit-transition:all 0.625s; /* Safari and Chrome */
+		-o-transition:all 0.625s; /* Opera */
+		&:hover {
+			cursor: pointer;
+		}
+		p {
+			margin: 17px 0;
+			padding: 0;
+			line-height: 1.8em;
+			font-size: 13px;
+			color: #333;
+			text-align: justify;
+		}
+		max-height: 2000px;
+		overflow:hidden;
+	}
+	.retractile {
+		max-height: 400px;
+		overflow:hidden;
+	}
+}

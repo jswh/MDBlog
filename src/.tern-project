@@ -1,0 +1,12 @@
+{
+"libs":[
+	"jquery"
+],
+"loadEagerly":[
+"../build/lib/vue-min.js"
+],
+"plugins": {
+	"node":{},
+	"complete_strings":{}
+}
+}
