@@ -9,6 +9,6 @@
 - [ ] 增加 loading 界面
 - [ ] 修改底部样式
 - [ ] 去掉 jquery 依赖
-- [ ] 发布版本只需要一个 config.js 一个 index.html
+- [x] 发布版本只需要一个 config.js 一个 index.html
 
 ### 主题参（chao）考（xi）的是，[个篱](http://geli.org/)
