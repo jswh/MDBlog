@@ -30,7 +30,7 @@ body {
 						text-indent:none;
 						color:#6b6767;
 						font-size: 30px;
-						::hover {
+						&:hover {
 							color:#333;
 						}
 					}
@@ -52,6 +52,20 @@ body {
 				padding: 40px 0 0 40px;
 				a {
 					color: #333;
+				}
+			}
+			.history {
+				margin: auto;
+				text-align: center;
+				padding-top: 25px;
+				margin-bottom: -45px;
+				a {
+					color: #999;
+					font-size: 20px;
+					font-family: Georgia;
+					&:hover {
+						color: #333;
+					}
 				}
 			}
 		}

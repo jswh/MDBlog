@@ -5,7 +5,7 @@
 			{{{ post.content }}}
 		</div>
 	</div>
-	<div class="clear">
-		<a href="https://github.com/jswh/MDBlog/commits/master/{{post.path}}">history</a>
+	<div class="clear history">
+		<a target="_blank" href="{{config.github_address}}/commits/master/{{post.path}}">« History »</a>
 	<div>
 </div>
