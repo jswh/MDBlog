@@ -20,7 +20,9 @@ router.map({
 		component: Vue.extend(require('./components/list/list'))
 	}
 });
-
+router.redirect({
+	'/' : window.config.default_page
+});
 router.start(Vue.extend({
 	template:require('./main.tpl'),
 	data: function () {
