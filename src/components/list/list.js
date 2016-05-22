@@ -11,7 +11,7 @@ module.exports = {
 				this.$set('list', []);
 				this.$set('listStore', []);
 				var fileCount = 0;
-				for (var i = 0; i < res.length; i ++) {
+				for (var i = res.length - 1; i >= 0; i --) {
 					var listItem = {};
 					listItem.fileName = res[i].name;
 					listItem.title = res[i].name.split('.')[0];
